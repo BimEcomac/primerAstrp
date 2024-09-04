@@ -1,20 +1,28 @@
+---
+const pageTitle = "Mi blog de Astro aprendizaje";
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Pagina inicial Astro</title>
+    <title>{pageTitle}</title>
 </head>
 <a href="/">Inicio</a>
-<a href="/about/">Blog</a>
+<a href="/about/">about</a>
 <a href="/blog/">Blog</a>
 <body>
     <h1>Esta es una pagina blog</h1>
     <section>
         <article>
             <h3>Este es el titulo del post</h3>
-            <img width="400px" height="250px">
+            <img width="400px" height="180px" >
             
             <br>
-            <textarea>Aqui estara la descripcion del post</textarea>
+            <ul>
+            <li>
+                <a href="/posts/post-1/">Publicacion 1</a></li>
+                <li><a href="/posts/post-2/">Publicacion2</a></li>
+                <li><a href="/posts/post-3/">Publicacion3</a></li>
+            </ul>
         </article>
     </section>
 </body>
